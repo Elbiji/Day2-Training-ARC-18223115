@@ -36,6 +36,7 @@ p {
 #masked-text-container:hover > #masked-text {
     transition-duration: 500ms;
     color: transparent;
+    letter-spacing: 5px;
     
 }
 
@@ -70,6 +71,13 @@ p {
     border-radius: 8px;
     width: 150px;
     height: 150px;
+    transition: 500ms;
+}
+
+.profile-picture:hover {
+    opacity: 75%;
+    transition: 500ms;
+    filter: blur(2px);
 }
 
 .profile-description {
@@ -82,8 +90,34 @@ p {
 
 .github {
     margin-right: 10px;
+    transition: 500ms;
+}
+
+.github:hover {
+    transition: 500ms;
+    opacity: 25%;
 }
 
 .twitter {
+    transition: 500ms;
     margin-right: 10px;
 }
+
+.twitter:hover {
+    transition: 500ms;
+    opacity: 25%;
+}
+
+.linkedin {
+    transition: 500ms;
+    margin-right: 10px;
+}
+
+
+.linkedin:hover {
+    transition: 500ms;
+    opacity: 25%;
+}
+
+
+
