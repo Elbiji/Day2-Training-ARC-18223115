@@ -1,0 +1,89 @@
+body {
+    font-family: "Geist", sans-serif;
+    padding-inline: 4rem;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+
+.masked-text {
+    font-size: 15vw;
+    background-image: url(tribute.gif);
+    background-clip: text;
+    background-size: cover;
+    color: black;
+    transition: 500ms;
+    margin: 0;
+    pointer-events: none;
+    letter-spacing: -5px;
+    
+}
+
+#masked-text-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#masked-text-container:hover > #masked-text {
+    transition-duration: 500ms;
+    color: transparent;
+    
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.Abbreviation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.fullname {
+    font-size: 10px;
+}
+
+.email {
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+.profile-title {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.profile-picture {
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-description {
+    margin-right: 100px;
+}
+
+.profile-contact {
+    display: flex;
+}
+
+.github {
+    margin-right: 10px;
+}
+
+.twitter {
+    margin-right: 10px;
+}
