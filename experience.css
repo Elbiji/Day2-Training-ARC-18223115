@@ -32,6 +32,23 @@ li {
 }
 
 .experience-title {
+    display: inline;
     margin-top: 2rem;
     font-size: 16px;
+    position: relative;
+}
+
+.experience-title::after {
+    content: ' ';
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: black;
+    transition: width .2s;
+}
+
+.experience-title:hover:after {
+    width: 100%;
 }
