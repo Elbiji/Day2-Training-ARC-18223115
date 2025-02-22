@@ -49,6 +49,3 @@ li {
     transition: width .2s;
 }
 
-.experience-title:hover:after {
-    width: 100%;
-}

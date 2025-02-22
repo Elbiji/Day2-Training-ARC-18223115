@@ -1,0 +1,28 @@
+.contact-section {
+    margin-top: 8rem;
+}
+
+.contact-title {
+    display: inline;
+    font-size: 16px;
+}
+
+.ps-note {
+    margin-right: 15rem;
+}
+
+.contact-headline {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hyperlink {
+    text-decoration: none;
+    background-color: none;
+    color: gray;
+}
+
+.hyperlink:hover {
+    text-decoration: underline;
+}
