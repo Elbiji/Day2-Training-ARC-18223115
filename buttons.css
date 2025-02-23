@@ -1,0 +1,62 @@
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 70px;
+    z-index: 10;
+    cursor: pointer;
+    border-style: solid;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: "Geist", sans-serif;
+    border-radius: 8px;
+    background-color: white;
+    transition: 200ms;
+}
+
+#back-to-top:hover {
+    background-color: black;
+    color: white;
+    transition: all 200ms;
+}
+
+#back-to-top:active {
+    background-color: white;
+    color: black;
+    transition: 100ms;
+}
+
+.btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+}
+
+/* zoomIn */
+@keyframes btnEntrance {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3,0.3,0.3);
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+.btnExit {
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name: btnExit;
+}
+
+/* zoomOut */
+@keyframes btnExit {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: scale3d(0.3,0.3,0.3);
+    }
+}
