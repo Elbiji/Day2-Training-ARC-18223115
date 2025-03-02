@@ -1,0 +1,40 @@
+.item {
+    border-radius: 16px;
+    border: 1px solid rgb(186, 186, 186);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.02), 
+    0 4px 8px rgba(0,0,0,0.02), 
+    0 8px 16px rgba(0,0,0,0.02),
+    0 16px 32px rgba(0,0,0,0.02), 
+    0 32px 64px rgba(0,0,0,0.02);
+    cursor: pointer;
+}
+
+.container {
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-gap: 20px;
+}
+
+.item-1 {
+    grid-area: 1 / 1 / 4 / 5;
+}
+
+.item-2 {
+    grid-area: 1 / 5 / 3 / 9;
+}
+
+.item-3 {
+    grid-area: 4 / 1 / 7 / 5 ;
+}
+
+.item-4 {
+    grid-area: 3 / 5 / 7 / 9;
+}

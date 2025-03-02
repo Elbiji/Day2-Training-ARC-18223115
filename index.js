@@ -11,7 +11,7 @@ const observer = new IntersectionObserver ( (entries) => {
     });
 },
 {
-    threshold: 0.7,
+    threshold: 0.4,
 });
 
 // We create new object that is IntersectionObserver that expects a callback function in this case

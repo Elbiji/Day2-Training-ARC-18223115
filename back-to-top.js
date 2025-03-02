@@ -1,7 +1,8 @@
 const backToTopButton = document.querySelector("#back-to-top");
-
-
 window.addEventListener("scroll", scrollFunction);
+// this window event listener will fire the function when we scroll our mouse and evaluate the situation through the scrollfunction
+backToTopButton.addEventListener("click", backToTop);
+// this also listens the mouse click that has been added to the back to top button and fire the backtotop function
 
 function scrollFunction () {
     if (window.pageYOffset > 300){ 
@@ -21,7 +22,6 @@ function scrollFunction () {
     }
 }
 
-backToTopButton.addEventListener("click", backToTop);
 
 function backToTop () {
     window.scrollTo({top: 0, behavior: "smooth"});
