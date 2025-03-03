@@ -50,12 +50,17 @@ function displayList(data) {
         trackImage.alt = track.name;
         trackImage.width = 100;
        
-        const trackText = document.createElement("p");
-        trackText.innerHTML = `${track.name} - ${track.artists.map(artist => artist.name).join(",")}`;
+        const trackName = document.createElement("p");
+        trackName.innerHTML = track.name;
+        
+        const trackArtists = document.createElement("h1");
+        trackArtists.innerHTML = track.artists.map(artist => artist.name).join(",");
         
 
         trackElement.appendChild(trackImage);
-        trackElement.appendChild(trackText);
+        trackdetails.appendChild(trackName);
+        trackdetails.appendChild(trackArtists);
+        trackElement.appendChild(trackdetails);
         tracksContainer.appendChild(trackElement);
     });
 }
