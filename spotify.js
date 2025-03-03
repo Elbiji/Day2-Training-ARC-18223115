@@ -23,7 +23,7 @@ async function getPlaylist(){
     const Token = await getAccessToken();
     // console.log(Token);
 
-    const result = await fetch ('https://api.spotify.com/v1/playlists/07yDNKTGFawAjA0H43bez1', {
+    const result = await fetch ('https://api.spotify.com/v1/playlists/3XwEbHqIDLWdee9MOGXpeX', {
         method : 'GET',
         headers : {
             Authorization : `Bearer ${Token}`
@@ -42,19 +42,20 @@ function displayList(data) {
     data.tracks.items.slice(0,5).forEach((trackItem, index) => {
         const track = trackItem.track;
         const trackElement = document.createElement("div");
+        const trackdetails = document.createElement("div");
         trackElement.classList.add("track");
         
         const trackImage = document.createElement("img");
         trackImage.src = track.album.images[0]?.url || '';
         trackImage.alt = track.name;
         trackImage.width = 100;
-
+       
         const trackText = document.createElement("p");
         trackText.innerHTML = `${track.name} - ${track.artists.map(artist => artist.name).join(",")}`;
         
 
-        trackElement.appendChild(trackText);
         trackElement.appendChild(trackImage);
+        trackElement.appendChild(trackText);
         tracksContainer.appendChild(trackElement);
     });
 }

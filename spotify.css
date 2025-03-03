@@ -7,3 +7,17 @@
     display: inline-block;
     font-size: 16px;
 }
+
+.track {
+    background: #1f1f1f;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    gap: 10px;
+}
+
+.track img {
+    border-radius: 8px;
+}
