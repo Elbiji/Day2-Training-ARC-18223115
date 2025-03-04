@@ -16,7 +16,16 @@
     color: white;
     display: flex;
     gap: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.1), 
+    0 4px 8px rgba(0,0,0,0.1), 
+    0 8px 16px rgba(0,0,0,0.1),
+    0 16px 32px rgba(0,0,0,0.1), 
+    0 32px 64px rgba(0,0,0,0.1);
+    transition: 500ms;
 }
+
+
 
 .track img {
     border-radius: 8px;
@@ -24,15 +33,27 @@
 }
 
 .track p {
-    margin-bottom: 5px;
+    margin-top: 2px;
+}
+
+.track:hover {
+    background: white;
+    color: #1f1f1f;
+    transition: 500ms;
 }
 
 .track:hover img {
-    filter: blur(2px);
+    /* filter: blur(2px); */
     transition: 200ms;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.1), 
+    0 4px 8px rgba(0,0,0,0.1), 
+    0 8px 16px rgba(0,0,0,0.1),
+    0 16px 32px rgba(0,0,0,0.1), 
+    0 32px 64px rgba(0,0,0,0.1);
 }
 
 .track h1 {
-    font-size: 16px;
-    margin-top: 0px;
+    font-size: 18px;
+    margin-bottom: 0px;
 }

@@ -50,10 +50,10 @@ function displayList(data) {
         trackImage.alt = track.name;
         trackImage.width = 100;
        
-        const trackName = document.createElement("p");
+        const trackName = document.createElement("h1");
         trackName.innerHTML = track.name;
         
-        const trackArtists = document.createElement("h1");
+        const trackArtists = document.createElement("p");
         trackArtists.innerHTML = track.artists.map(artist => artist.name).join(",");
         
 
